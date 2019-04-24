@@ -3,9 +3,9 @@ package kingdom;
 public abstract class AbstractAnimal
 {
   private static int maxId = 0;
-  int id;
-  String name;
-  int yearDiscovered;
+  private int id;
+  private String name;
+  private int yearDiscovered;
 
   public AbstractAnimal(String name, int yearDiscovered)
   {
@@ -27,5 +27,20 @@ public abstract class AbstractAnimal
   public String toString()
   {
     return "\nName: " + name + "\nYear Discovered: " + yearDiscovered + "\nId: " + id;
+  }
+
+  public String getName()
+  {
+    return name;
+  }
+
+  public int getYear()
+  {
+    return yearDiscovered;
+  }
+
+  public int getId()
+  {
+    return id;
   }
 }
