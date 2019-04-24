@@ -1,17 +1,16 @@
 package kingdom;
 
-public class Mammal extends AbstractAnimal
+public class Bird extends AbstractAnimal
 {
-  public Mammal(String name, int yearDiscovered)
+  public Bird(String name, int yearDiscovered)
   {
     super(name, yearDiscovered);
   }
 
-
   @Override
   public String move()
   {
-    return "Walk";
+    return "Fly";
   }
 
   @Override
@@ -23,7 +22,6 @@ public class Mammal extends AbstractAnimal
   @Override
   public String reproduce()
   {
-    return "Birth";
+    return "Eggs";
   }
-
 }
